@@ -1,0 +1,3 @@
+[submodule "epubjs-demo"]
+	path = epubjs-demo
+	url = https://github.com/scillidan/epubjs-demo
