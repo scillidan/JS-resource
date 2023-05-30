@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=IM+Fell+DW+Pica+SC&display=swap");
+
+/*https://dribbble.com/shots/10825011/attachments/2477075*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    position: absolute;
+}
+
+:root {
+    --container-width: 60vw;
+    --color-black: #0b0b0b;
+    --color-cream: #eee5df;
+    --color-accent: #bf7555;
+    --max-width: 50vh;
+    --line-size: 6px;
+    --range-size: 8px;
+    --font-spacing: 100px;
+    --inner-circle-size: calc(100% - calc(var(--font-spacing) * 2));
+    --spoke-deg: 11.25deg;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--color-black);
+    color: var(--color-cream);
+    transition: all 0.25s ease;
+}
+
+#container {
+    width: var(--container-width);
+    height: var(--container-width);
+    padding: calc(var(--line-size) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: var(--max-width);
+    max-height: var(--max-width);
+    text-transform: uppercase;
+    border-width: var(--line-size);
+    border-style: solid;
+
+    transition: all 0.25s ease;
+}
+
+#container-wrapper {
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-options {
+    font-family: "Averia Libre", cursive;
+    background: #1a1a1a;
+    right: 0;
+    width: 25vw;
+    padding: 4vw 3vw;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#circle-outer h1,
+#circle-inner h2 {
+    border-radius: inherit;
+    overflow: hidden;
+    transform-origin: center center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#circle-outer h1 {
+    font-family: "Averia Libre", cursive;
+    color: var(--color-cream);
+    line-height: var(--font-spacing);
+    font-size: calc(var(--font-spacing) / 1.25);
+    align-content: center;
+    transform: rotate(calc(var(--spoke-deg) * -9));
+}
+
+#circle-inner h2 {
+    font-family: "IM Fell DW Pica SC", serif;
+    color: var(--color-cream);
+    position: absolute;
+    letter-spacing: 0.5rem;
+    line-height: 100%;
+    font-size: 96px;
+    align-items: center;
+    z-index: 1000;
+}
+
+#circle-outer,
+#circle-inner {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--line-size) solid var(--color-cream);
+}
+
+#circle-outer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: var(--color-black);
+}
+
+#circle-inner {
+    position: absolute;
+    width: var(--inner-circle-size);
+    height: var(--inner-circle-size);
+}
+
+#border-inner {
+    width: 100%;
+    height: 100%;
+    border: var(--line-size) solid var(--color-cream);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    padding: calc(var(--line-size) * 6);
+}
+
+#border-inner #spokes {
+    width: 100vw;
+    max-width: 100vh;
+    height: 100vw;
+    max-height: 100vh;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#border-inner #spokes span {
+    width: var(--line-size);
+    background: var(--color-cream);
+    height: 100%;
+    position: absolute;
+    transform-origin: center center;
+}
+
+#border-inner #spokes span:nth-of-type(2) {
+    transform: rotate(calc(var(--spoke-deg) * 1));
+}
+
+#border-inner #spokes span:nth-of-type(3) {
+    transform: rotate(calc(var(--spoke-deg) * 2));
+}
+
+#border-inner #spokes span:nth-of-type(4) {
+    transform: rotate(calc(var(--spoke-deg) * 3));
+}
+
+#border-inner #spokes span:nth-of-type(5) {
+    transform: rotate(calc(var(--spoke-deg) * 4));
+}
+
+#border-inner #spokes span:nth-of-type(6) {
+    transform: rotate(calc(var(--spoke-deg) * 5));
+}
+
+#border-inner #spokes span:nth-of-type(7) {
+    transform: rotate(calc(var(--spoke-deg) * 6));
+}
+
+#border-inner #spokes span:nth-of-type(8) {
+    transform: rotate(calc(var(--spoke-deg) * 7));
+}
+
+#border-inner #spokes span:nth-of-type(9) {
+    transform: rotate(calc(var(--spoke-deg) * 8));
+}
+
+#border-inner #spokes span:nth-of-type(10) {
+    transform: rotate(calc(var(--spoke-deg) * 9));
+}
+
+#border-inner #spokes span:nth-of-type(11) {
+    transform: rotate(calc(var(--spoke-deg) * 10));
+}
+
+#border-inner #spokes span:nth-of-type(12) {
+    transform: rotate(calc(var(--spoke-deg) * 11));
+}
+
+#border-inner #spokes span:nth-of-type(13) {
+    transform: rotate(calc(var(--spoke-deg) * 12));
+}
+
+#border-inner #spokes span:nth-of-type(14) {
+    transform: rotate(calc(var(--spoke-deg) * 13));
+}
+
+#border-inner #spokes span:nth-of-type(15) {
+    transform: rotate(calc(var(--spoke-deg) * 14));
+}
+
+#border-inner #spokes span:nth-of-type(16) {
+    transform: rotate(calc(var(--spoke-deg) * 15));
+}
+
+#circle-outer h1 span {
+    position: absolute;
+    transform-origin: center bottom;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: var(--font-size);
+    width: 0;
+}
+
+#circle-outer h1 span:nth-of-type(2) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 1));
+}
+
+#circle-outer h1 span:nth-of-type(3) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 2));
+}
+
+#circle-outer h1 span:nth-of-type(4) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 3));
+}
+
+#circle-outer h1 span:nth-of-type(5) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 4));
+}
+
+#circle-outer h1 span:nth-of-type(6) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 5));
+}
+
+#circle-outer h1 span:nth-of-type(7) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 6));
+}
+
+#circle-outer h1 span:nth-of-type(8) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 7));
+}
+
+#circle-outer h1 span:nth-of-type(9) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 8));
+}
+
+#circle-outer h1 span:nth-of-type(10) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 9));
+}
+
+#circle-outer h1 span:nth-of-type(11) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 10));
+}
+
+#circle-outer h1 span:nth-of-type(12) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 11));
+}
+
+#circle-outer h1 span:nth-of-type(13) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 12));
+}
+
+#circle-outer h1 span:nth-of-type(14) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 13));
+}
+
+#circle-outer h1 span:nth-of-type(15) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 14));
+}
+
+#circle-outer h1 span:nth-of-type(16) {
+    transform: rotate(calc(calc(var(--spoke-deg) * 2) * 15));
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: calc(var(--range-size) * 1.5);
+    width: calc(var(--range-size) * 1.5);
+    border-radius: 50%;
+    background: var(--color-cream);
+    cursor: pointer;
+    margin-top: calc(var(--range-size) / -4);
+}
+
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb,
+input[type="range"]::-webkit-slider-thumb {
+    height: calc(var(--range-size) * 1.5);
+    width: calc(var(--range-size) * 1.5);
+    border-radius: 50%;
+    background: var(--color-cream);
+    cursor: pointer;
+    margin-top: calc(var(--range-size) / -4);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: var(--range-size);
+    cursor: pointer;
+    background: var(--color-accent);
+    border-radius: calc(var(--range-size) / 2);
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: var(--range-size);
+    cursor: pointer;
+    background: var(--yellow-color);
+    border-radius: var(--line-size);
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: var(--color-accent);
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: var(--range-size);
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]:focus::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper,
+input[type="range"]:focus::-ms-fill-upper {
+    background: none;
+}
+
+.toggle {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.toggle label {
+    display: inline-block;
+    padding-left: calc(var(--range-size) * 3.5);
+    letter-spacing: 0.2rem;
+}
+
+.toggle label span {
+    background-color: transparent;
+    height: calc(var(--range-size) * 2.5);
+    width: calc(var(--range-size) * 2.5);
+    border: 2px solid var(--color-cream);
+    border-radius: 50%;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: calc(var(--range-size) * -3.5);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background-color: var(--color-accent);
+}
+
+input[type="checkbox"]:checked + label span:before {
+    content: "";
+    width: var(--range-size);
+    height: var(--range-size);
+    background: var(--color-cream);
+    border-radius: inherit;
+}
+
+#container-border-round-wrap {
+    margin-left: calc(var(--range-size) * 3.5);
+    margin-top: 24px;
+}
+
+#logo-options > div > div {
+    margin-bottom: 24px;
+}
+
+.range-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.range-slider input {
+    width: 100%;
+    position: relative;
+    font-size: 10px;
+}
+
+.range-slider input:before,
+.range-slider input:after {
+    position: absolute;
+    font-family: "Averia Libre", cursive;
+    color: var(--color-cream);
+    display: flex;
+    top: 200%;
+}
+
+.range-slider input:after {
+    right: 0;
+}
+
+.text-range:after,
+.logo-range:after {
+    font-size: 16px;
+}
+
+.text-range:before,
+.text-range:after,
+.logo-range:before,
+.logo-range:after {
+    content: "A";
+}
+
+.padding-range:before {
+    content: "\25EF";
+}
+
+.padding-range:after {
+    content: "\2B24";
+}
+
+.outer-padding-range:before,
+.outer-padding-range:after {
+    font-size: 16px;
+}
+
+.outer-padding-range:before {
+    content: "\25C9";
+}
+
+.outer-padding-range:after {
+    content: "\25CE";
+}
+
+.range-slider h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: 0.2rem;
+}
+
+.range-slider .range-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-options > div {
+    margin-bottom: 60px;
+}
+
+#logo-options > div > h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+button {
+    border: 3px solid var(--color-cream);
+    background: transparent;
+    color: var(--color-cream);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Averia Libre", cursive;
+    padding: 12px 36px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4vw;
+    opacity: 0.75;
+}
+
+p,
+p a {
+    font-family: "Averia Libre", cursive;
+    cursor: pointer;
+    color: var(--color-cream);
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+p a::after {
+    margin-left: 6px;
+    content: "\0279E";
+    transition: transform 0.15s ease-in;
+}
+
+p a:hover::after {
+    transform: translateX(3px);
+}

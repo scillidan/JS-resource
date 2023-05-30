@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CodePen - Quarantine Club Badge Creator</title>
+        <link rel="stylesheet" href="./css/reset.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div id="container-wrapper">
+            <div id="container">
+                <div id="border-inner">
+                    <div id="spokes">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div id="circle-outer">
+                        <h1>Quarantine&#8226;Club&#8226;</h1>
+                        <div id="circle-inner">
+                            <h2>QC</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Based on designs by&nbsp;<a href="https://dribbble.com/shots/10825011-Quarantine-Club-Badges">Lisa McCormick</a></p>
+        </div>
+
+        <div id="logo-options">
+            <div class="toggle-options">
+                <h3>Toggles</h3>
+                <div class="toggle">
+                    <input type="checkbox" id="container-border" />
+                    <label for="container-border"><span></span>Outer Border</label>
+                    <div class="toggle" id="container-border-round-wrap">
+                        <input type="checkbox" id="container-border-round" />
+                        <label for="container-border-round"><span></span>Rounded Outer Border</label>
+                    </div>
+                </div>
+
+                <div class="toggle">
+                    <input type="checkbox" id="container-inner-border" />
+                    <label for="container-inner-border"><span></span>Inner Border</label>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="container-border-inner-round" />
+                    <label for="container-border-inner-round"><span></span>Rounded Inner Border</label>
+                </div>
+            </div>
+            <div class="range-options">
+                <h3>Sliders</h3>
+                <div class="range-slider">
+                    <h3>Outer Text Size</h3>
+                    <input class="text-range" type="range" value="100" min="20" max="200" />
+                </div>
+
+                <div class="range-slider">
+                    <h3>Inner Logo Size</h3>
+                    <input class="logo-range" type="range" value="96" step="6" min="12" max="282" />
+                </div>
+
+                <div class="range-slider">
+                    <h3>Inner Spacing</h3>
+                    <input class="padding-range" type="range" value="36" step="6" min="12" max="150" />
+                </div>
+                <div class="range-slider">
+                    <h3>Outer Spacing</h3>
+                    <input class="outer-padding-range" type="range" value="12" step="6" min="0" max="150" />
+                </div>
+                <div class="range-slider">
+                    <h3>Line Thickness</h3>
+                    <input class="line-range" type="range" value="6" step="1" min="1" max="15" />
+                </div>
+            </div>
+
+            <button id="reset">Reset</button>
+        </div>
+        <!-- partial -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery.lettering.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
