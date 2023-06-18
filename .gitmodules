@@ -1,3 +1,6 @@
 [submodule "epubjs-demo"]
 	path = epubjs-demo
 	url = https://github.com/scillidan/epubjs-demo
+[submodule "infinite-viewer"]
+	path = infinite-viewer
+	url = https://github.com/scillidan/infinite-viewer
